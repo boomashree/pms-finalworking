@@ -1,0 +1,30 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+      java: corretto11
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region $AWS_REGION)
+   
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building java
+      - cd authorization-microservice
+      - mvn clean package
+      - echo Building the docker image
+      - docker build -t authorization-microservice .
+      - docker tag authorization-microservice 156962844638.dkr.ecr.us-east-1.amazonaws.com/n-768656-registry:authorization-microservice
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - docker push 156962844638.dkr.ecr.us-east-1.amazonaws.com/n-768656-registry:authorization-microservice
+      - echo Writing definition files
+      - printf '[{"name":"n-768656-auth-container","imageUri":"%s"}]' 156962844638.dkr.ecr.us-east-1.amazonaws.com/n-768656-registry:authorization-microservice > taskdefinition.json
+
+artifacts:
+  files: authorization-microservice/taskdefinition.json

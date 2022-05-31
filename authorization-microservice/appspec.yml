@@ -1,0 +1,10 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:156962844638:task-definition/task-768656-auth:11"
+        LoadBalancerInfo:
+          ContainerName: "768656-container"
+          ContainerPort: "8080"
+        PlatformVersion: "LATEST"
