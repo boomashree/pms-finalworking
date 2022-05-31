@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      docker: 18
+      java: corretto11
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - $(aws ecr get-login --no-include-email --region us-east-1)
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building java
+      - cd pensioner-detail-service
+      - mvn clean package
+      - echo Building the docker image
+      - docker build -t process-pension-microservice .
+      - docker tag process-pension-microservice:latest 156962844638.dkr.ecr.us-east-1.amazonaws.com/pension_system_repository-768656:process-pension-microservice
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - docker push 156962844638.dkr.ecr.us-east-1.amazonaws.com/pension_system_repository-768656:process-pension-microservice
+      - echo Writing definition files
+      - printf '[{"name":"ij028-process-pension-microservice-container","imageUri":"%s"}]' 156962844638.dkr.ecr.us-east-1.amazonaws.com/pension_system_repository-768656:process-pension-microservice > taskdefinition.json
+
+artifacts:
+  files: process-pension-microservice/taskdefinition.json
