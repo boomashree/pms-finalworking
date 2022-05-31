@@ -7973,3 +7973,162 @@ com.cognizant.exception.InvalidTokenException: Token Expired
 2022-06-01 04:25:08.085  INFO 63257 --- [Thread-15] com.netflix.discovery.DiscoveryClient    : Unregistering ...
 2022-06-01 04:25:08.087  INFO 63257 --- [Thread-15] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095 - deregister  status: 200
 2022-06-01 04:25:08.090  INFO 63257 --- [Thread-15] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-06-01 04:51:08.531  INFO 71619 --- [restartedMain] c.c.AuthorizationMicroserviceApplication : Starting AuthorizationMicroserviceApplication using Java 1.8.0_301 on intuitdepfceb5 with PID 71619 (/Users/bshree/git/personal/pms-finalworking/authorization-microservice/target/classes started by bshree in /Users/bshree/git/personal/pms-finalworking/authorization-microservice)
+2022-06-01 04:51:08.536  INFO 71619 --- [restartedMain] c.c.AuthorizationMicroserviceApplication : No active profile set, falling back to default profiles: default
+2022-06-01 04:51:08.620  INFO 71619 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-01 04:51:08.620  INFO 71619 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-01 04:51:09.987  INFO 71619 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-01 04:51:10.276  INFO 71619 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 277 ms. Found 1 JPA repository interfaces.
+2022-06-01 04:51:10.705  INFO 71619 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0ba79153-1d4e-38d2-9513-484e8a352eef
+2022-06-01 04:51:11.854  INFO 71619 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2022-06-01 04:51:11.875  INFO 71619 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-01 04:51:11.876  INFO 71619 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-06-01 04:51:12.021  INFO 71619 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-01 04:51:12.022  INFO 71619 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3400 ms
+2022-06-01 04:51:12.118  INFO 71619 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-01 04:51:12.505  INFO 71619 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-01 04:51:12.518  INFO 71619 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDB'
+2022-06-01 04:51:12.839  INFO 71619 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-01 04:51:12.961  INFO 71619 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-06-01 04:51:13.231  INFO 71619 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-01 04:51:13.428  INFO 71619 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-01 04:51:14.288  INFO 71619 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-01 04:51:14.300  INFO 71619 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-01 04:51:15.007  WARN 71619 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-01 04:51:15.310  WARN 71619 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-01 04:51:16.082  INFO 71619 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@698cda51, org.springframework.security.web.context.SecurityContextPersistenceFilter@7b500090, org.springframework.security.web.header.HeaderWriterFilter@7a6936, org.springframework.security.web.authentication.logout.LogoutFilter@3251d4cf, com.cognizant.filter.JwtFilter@3ae6a840, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13237e80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1162f124, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f00e024, org.springframework.security.web.session.SessionManagementFilter@3da44d10, org.springframework.security.web.access.ExceptionTranslationFilter@4b45962c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5723ea73]
+2022-06-01 04:51:16.634  INFO 71619 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-06-01 04:51:16.765  WARN 71619 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-06-01 04:51:16.825  INFO 71619 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-06-01 04:51:16.991  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-06-01 04:51:17.001  INFO 71619 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-01 04:51:17.048  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-01 04:51:17.048  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-01 04:51:17.048  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-01 04:51:17.048  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-01 04:51:17.049  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-01 04:51:17.049  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-06-01 04:51:17.049  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-01 04:51:18.072  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-06-01 04:51:18.075  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-06-01 04:51:18.078  INFO 71619 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-06-01 04:51:18.086  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1654039278083 with initial instances count: 0
+2022-06-01 04:51:18.088  INFO 71619 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION-SERVICE with eureka with status UP
+2022-06-01 04:51:18.089  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1654039278089, current=UP, previous=STARTING]
+2022-06-01 04:51:18.092  INFO 71619 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095: registering service...
+2022-06-01 04:51:18.134  INFO 71619 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path ''
+2022-06-01 04:51:18.135  INFO 71619 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
+2022-06-01 04:51:18.139  INFO 71619 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-01 04:51:18.163  INFO 71619 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-01 04:51:18.189  INFO 71619 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-01 04:51:18.378  INFO 71619 --- [restartedMain] c.c.AuthorizationMicroserviceApplication : Started AuthorizationMicroserviceApplication in 10.862 seconds (JVM running for 11.821)
+2022-06-01 04:51:18.395  INFO 71619 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095 - registration status: 204
+2022-06-01 04:51:48.080  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-01 04:51:48.080  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-01 04:51:48.081  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-01 04:51:48.081  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-01 04:51:48.081  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-01 04:51:48.081  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2022-06-01 04:51:48.081  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-01 04:51:48.096  INFO 71619 --- [DiscoveryClient-CacheRefreshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-06-01 04:56:17.060  INFO 71619 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-01 05:00:30.888  INFO 71619 --- [http-nio-9095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-01 05:00:30.889  INFO 71619 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-01 05:00:30.895  INFO 71619 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-06-01 05:00:30.981  INFO 71619 --- [http-nio-9095-exec-1] c.c.controller.AuthorizationController   : STARTED - generateToken
+2022-06-01 05:00:30.983  INFO 71619 --- [http-nio-9095-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:00:31.212  INFO 71619 --- [http-nio-9095-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:00:31.591  INFO 71619 --- [http-nio-9095-exec-1] c.c.controller.AuthorizationController   : END - login()
+2022-06-01 05:01:17.072  INFO 71619 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-01 05:02:19.795  INFO 71619 --- [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTHORIZATION-SERVICE with eureka with status DOWN
+2022-06-01 05:02:19.796  INFO 71619 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1654039939796, current=DOWN, previous=UP]
+2022-06-01 05:02:19.796  INFO 71619 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095: registering service...
+2022-06-01 05:02:19.801  INFO 71619 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095 - registration status: 204
+2022-06-01 05:02:19.828  INFO 71619 --- [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-01 05:02:19.829  INFO 71619 --- [Thread-1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-06-01 05:02:20.048  WARN 71619 --- [Thread-1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+2022-06-01 05:02:20.048  INFO 71619 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-01 05:02:20.051  INFO 71619 --- [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-01 05:02:20.051  INFO 71619 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-06-01 05:02:23.058  INFO 71619 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-06-01 05:02:23.062  INFO 71619 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095 - deregister  status: 200
+2022-06-01 05:02:23.066  INFO 71619 --- [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-06-01 05:02:23.281  INFO 71619 --- [restartedMain] c.c.AuthorizationMicroserviceApplication : Starting AuthorizationMicroserviceApplication using Java 1.8.0_301 on intuitdepfceb5 with PID 71619 (/Users/bshree/git/personal/pms-finalworking/authorization-microservice/target/classes started by bshree in /Users/bshree/git/personal/pms-finalworking/authorization-microservice)
+2022-06-01 05:02:23.282  INFO 71619 --- [restartedMain] c.c.AuthorizationMicroserviceApplication : No active profile set, falling back to default profiles: default
+2022-06-01 05:02:23.635  INFO 71619 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-01 05:02:23.650  INFO 71619 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2022-06-01 05:02:23.735  INFO 71619 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=0ba79153-1d4e-38d2-9513-484e8a352eef
+2022-06-01 05:02:23.869  INFO 71619 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9095 (http)
+2022-06-01 05:02:23.870  INFO 71619 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-01 05:02:23.870  INFO 71619 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2022-06-01 05:02:23.884  INFO 71619 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-01 05:02:23.884  INFO 71619 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 598 ms
+2022-06-01 05:02:23.901  INFO 71619 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-06-01 05:02:23.903  INFO 71619 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-06-01 05:02:23.903  INFO 71619 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testDB'
+2022-06-01 05:02:23.933  INFO 71619 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-01 05:02:23.941  INFO 71619 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-06-01 05:02:23.981  INFO 71619 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-01 05:02:23.982  INFO 71619 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-01 05:02:24.053  WARN 71619 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-01 05:02:24.092  WARN 71619 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-01 05:02:24.205  INFO 71619 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5d068d42, org.springframework.security.web.context.SecurityContextPersistenceFilter@745cecba, org.springframework.security.web.header.HeaderWriterFilter@2f5d5d71, org.springframework.security.web.authentication.logout.LogoutFilter@7ea0e5af, com.cognizant.filter.JwtFilter@73380d31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@575146e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12223faf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3876b28b, org.springframework.security.web.session.SessionManagementFilter@1aeca774, org.springframework.security.web.access.ExceptionTranslationFilter@457cca4a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4262e487]
+2022-06-01 05:02:24.327  INFO 71619 --- [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2022-06-01 05:02:24.367  WARN 71619 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-06-01 05:02:24.388  INFO 71619 --- [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-06-01 05:02:24.393  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-06-01 05:02:24.393  INFO 71619 --- [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-01 05:02:24.408  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-06-01 05:02:24.409  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-06-01 05:02:24.409  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-06-01 05:02:24.409  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-06-01 05:02:24.409  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-06-01 05:02:24.409  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-06-01 05:02:24.409  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-06-01 05:02:24.441  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-06-01 05:02:24.444  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-06-01 05:02:24.445  INFO 71619 --- [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-06-01 05:02:24.446  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1654039944446 with initial instances count: 4
+2022-06-01 05:02:24.448  INFO 71619 --- [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application AUTHORIZATION-SERVICE with eureka with status UP
+2022-06-01 05:02:24.448  INFO 71619 --- [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1654039944448, current=UP, previous=STARTING]
+2022-06-01 05:02:24.449  INFO 71619 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095: registering service...
+2022-06-01 05:02:24.453  INFO 71619 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9095 (http) with context path ''
+2022-06-01 05:02:24.454  INFO 71619 --- [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9095
+2022-06-01 05:02:24.458  INFO 71619 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-06-01 05:02:24.462  INFO 71619 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2022-06-01 05:02:24.469  INFO 71619 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-06-01 05:02:24.473  INFO 71619 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTHORIZATION-SERVICE/192.168.18.10:authorization-Service:9095 - registration status: 204
+2022-06-01 05:02:24.503  INFO 71619 --- [restartedMain] c.c.AuthorizationMicroserviceApplication : Started AuthorizationMicroserviceApplication in 1.268 seconds (JVM running for 677.934)
+2022-06-01 05:02:24.507  INFO 71619 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-01 05:02:42.401  INFO 71619 --- [http-nio-9095-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-01 05:02:42.401  INFO 71619 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-01 05:02:42.403  INFO 71619 --- [http-nio-9095-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-01 05:02:42.406  INFO 71619 --- [http-nio-9095-exec-1] c.c.controller.AuthorizationController   : STARTED - generateToken
+2022-06-01 05:02:42.406  INFO 71619 --- [http-nio-9095-exec-1] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:02:42.410  INFO 71619 --- [http-nio-9095-exec-1] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:02:42.412  INFO 71619 --- [http-nio-9095-exec-1] c.c.controller.AuthorizationController   : END - login()
+2022-06-01 05:04:07.212  INFO 71619 --- [http-nio-9095-exec-3] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:04:07.234  INFO 71619 --- [http-nio-9095-exec-3] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:04:07.240  INFO 71619 --- [http-nio-9095-exec-3] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-06-01 05:04:07.241  INFO 71619 --- [http-nio-9095-exec-3] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:04:07.242  INFO 71619 --- [http-nio-9095-exec-3] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:04:07.243  INFO 71619 --- [http-nio-9095-exec-3] c.c.controller.AuthorizationController   : END - authorization
+2022-06-01 05:07:24.419  INFO 71619 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-06-01 05:09:34.699  INFO 71619 --- [http-nio-9095-exec-5] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:09:34.700  INFO 71619 --- [http-nio-9095-exec-5] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:09:34.702  INFO 71619 --- [http-nio-9095-exec-5] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-06-01 05:09:34.703  INFO 71619 --- [http-nio-9095-exec-5] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:09:34.704  INFO 71619 --- [http-nio-9095-exec-5] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:09:34.705  INFO 71619 --- [http-nio-9095-exec-5] c.c.controller.AuthorizationController   : END - authorization
+2022-06-01 05:10:28.768  INFO 71619 --- [http-nio-9095-exec-6] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:10:28.769  INFO 71619 --- [http-nio-9095-exec-6] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:10:28.771  INFO 71619 --- [http-nio-9095-exec-6] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-06-01 05:10:28.772  INFO 71619 --- [http-nio-9095-exec-6] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:10:28.772  INFO 71619 --- [http-nio-9095-exec-6] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:10:28.773  INFO 71619 --- [http-nio-9095-exec-6] c.c.controller.AuthorizationController   : END - authorization
+2022-06-01 05:10:28.887  INFO 71619 --- [http-nio-9095-exec-7] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:10:28.889  INFO 71619 --- [http-nio-9095-exec-7] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:10:28.890  INFO 71619 --- [http-nio-9095-exec-7] c.c.controller.AuthorizationController   : STARTED - authorization
+2022-06-01 05:10:28.891  INFO 71619 --- [http-nio-9095-exec-7] c.c.service.CustomUserDetailService      : STARTED - loadUserByUsername
+2022-06-01 05:10:28.892  INFO 71619 --- [http-nio-9095-exec-7] c.c.service.CustomUserDetailService      : END - loadUserByUsername
+2022-06-01 05:10:28.893  INFO 71619 --- [http-nio-9095-exec-7] c.c.controller.AuthorizationController   : END - authorization

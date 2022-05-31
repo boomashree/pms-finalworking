@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import com.cognizant.model.ProcessPensionInput;
 import com.cognizant.model.ProcessPensionResponse;
 
-@FeignClient(name = "PensionDisburesmentService", url = "http://localhost:9083")
+@FeignClient(name = "PensionDisburesmentService")
 public interface PensionDisbursementClient {
 	
 	@PostMapping("/disbursePension")

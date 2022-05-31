@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 
 import com.cognizant.model.PensionerDetail;
 
-@FeignClient(name = "PensionerDetailService", url = "http://localhost:9081")
+@FeignClient(name = "Pensioner-Detail-Service")
 public interface PensionerDetailClient {
 	
 	@GetMapping("/pensionerDetail/{aadhaarNumber}")
