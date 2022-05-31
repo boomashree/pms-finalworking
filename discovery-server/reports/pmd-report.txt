@@ -1,0 +1,18 @@
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:9:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:9:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:9:	UseUtilityClass:	UseUtilityClass: All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:11:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/main/java/com/pms/dicoveryserver/DicoveryServerApplication.java:11:	MethodArgumentCouldBeFinal:	MethodArgumentCouldBeFinal: Parameter 'args' is not assigned and could be declared final
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:7:	AtLeastOneConstructor:	AtLeastOneConstructor: Each class should declare at least one constructor
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:7:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the contextLoads method if you want a default access modifier
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:10:	CommentDefaultAccessModifier:	CommentDefaultAccessModifier: To avoid mistakes add a comment at the beginning of the contextLoads method if you want a default access modifier
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:10:	JUnitTestsShouldIncludeAssert:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:10:	JUnitTestsShouldIncludeAssert:	JUnitTestsShouldIncludeAssert: JUnit tests should include assert() or fail()
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:10:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
+src/test/java/com/pms/dicoveryserver/DicoveryServerApplicationTests.java:10:	UncommentedEmptyMethodBody:	UncommentedEmptyMethodBody: Document empty method body
