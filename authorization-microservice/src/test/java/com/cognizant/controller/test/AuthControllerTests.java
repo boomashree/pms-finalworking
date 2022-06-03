@@ -3,10 +3,13 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import com.cognizant.controller.AuthorizationController;
@@ -14,7 +17,10 @@ import com.cognizant.model.AuthRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootTest(classes = AuthorizationController.class)
+@RunWith(SpringRunner.class)
 @AutoConfigureMockMvc
+@WebMvcTest
+
 public class AuthControllerTests {
 	
 	@Autowired
@@ -29,7 +35,7 @@ public class AuthControllerTests {
 
 	@Test
 	public void loginTestSuccess() throws Exception {
-		AuthRequest admin = new AuthRequest("Iftak", "password1");
+		AuthRequest admin = new AuthRequest("Booma", "shree");
 
 		ResultActions actions = mockMvc
 				.perform(post("/authenticate").contentType(MediaType.APPLICATION_JSON).content(asJsonString(admin)));
