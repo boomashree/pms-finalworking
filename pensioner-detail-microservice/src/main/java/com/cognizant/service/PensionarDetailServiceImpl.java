@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import javax.annotation.PostConstruct;
 
@@ -68,5 +69,18 @@ public class PensionarDetailServiceImpl{
 		pensionerDetailRepository.saveAll(pensionerDetailList);
 		LOGGER.info("END - savePensionerData");
 	}
+	
+	 public PensionerDetail getPensionerDetailByAadhaarNumber(String aadhaarNumber) {
+	        PensionerDetail pensionerDetail = null;
+	        LOGGER.info("STARTED - PensionDetail getPensionerDetailByAadhaarNumber");
+	        try {
+	            pensionerDetail = pensionerDetailRepository.findByAadhaarNumber(aadhaarNumber);
+	        } catch (Exception e) {
+	            LOGGER.error("EXCEPTION - PensionDetail getPensionerDetailByAadhaarNumber");
+	            throw new ResourceNotFoundException("Invalid Pensioner Input");
+	        }
+	        LOGGER.info("END - PensionDetail getPensionerDetailByAadhaarNumber");
+	        return pensionerDetail;
+	    }
 
 }

@@ -6,7 +6,11 @@ import org.springframework.stereotype.Repository;
 import com.cognizant.model.PensionerDetail;
 
 @Repository
-public interface PensionerDetailRepository extends JpaRepository<PensionerDetail, String> {
-
+public interface PensionerDetailRepository extends JpaRepository<PensionerDetail, Long> {
+	
+	PensionerDetail findByAadhaarNumber(String aadhaarNumber); 
+		
+		
+	
 	
 }

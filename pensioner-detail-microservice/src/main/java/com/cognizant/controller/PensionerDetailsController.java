@@ -20,12 +20,14 @@ public class PensionerDetailsController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(PensionerDetailsController.class);
 	private AuthorizationClient authorizationClient;
 	private PensionerDetailRepository pensionerDetailRepository;
+	private PensionarDetailServiceImpl PensionarDetailServiceImpl;
 
 	@Autowired
 	public PensionerDetailsController(PensionerDetailRepository pensionerDetailRepository,
 			PensionarDetailServiceImpl pensionarDetailServiceImpl, AuthorizationClient authorizationClient) {
 		this.pensionerDetailRepository = pensionerDetailRepository;
 		this.authorizationClient = authorizationClient;
+		this.PensionarDetailServiceImpl =pensionarDetailServiceImpl;
 	}
 
 	//authorizing end point with jwt token 
@@ -37,16 +39,23 @@ public class PensionerDetailsController {
 			@PathVariable String aadhaarNumber) throws Exception {
 		LOGGER.info("STARTED - findByAadhaarNumber");
 
-		if (authorizationClient.authorization(token)) {
-			PensionerDetail pensionerDetail = pensionerDetailRepository.findById(aadhaarNumber)
-					.orElseThrow(() -> new ResourceNotFoundException("employee with aadhaar number not found"));
-			LOGGER.info("END - findByAadhaarNumber");
-			return pensionerDetail;
-		} else {
-			LOGGER.error("EXCEPTION - findByAadhaarNumber");
-			throw new Exception("token is not valid");
-		}
-	}
+		PensionerDetail pensionerDetail = null;
+        try {
+            if (authorizationClient.authorization(token)) {
+                pensionerDetail = PensionarDetailServiceImpl.getPensionerDetailByAadhaarNumber(aadhaarNumber);
+            } else {
+                LOGGER.error("EXCEPTION - findByAadhaarNumber");
+                throw new Exception("Invalid token");
+            }
+        } 
+        catch (Exception e) {
+            LOGGER.error("EXCEPTION - PensionDetail findByAadhaarNumber");
+            throw  new ResourceNotFoundException("employee with aadhaar number not found");
+        } 
+        LOGGER.info("END - PensionDetail findByAadhaarNumber");
+        return pensionerDetail;
+    }
+	
 
 	
 	// all pensioner details
